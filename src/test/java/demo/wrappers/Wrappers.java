@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,4 +17,8 @@ public class Wrappers {
     /*
      * Write your selenium wrappers here
      */
+
+     public static void clickOn(WebElement elem, WebDriver driver){
+        elem.click();
+     }
 }
